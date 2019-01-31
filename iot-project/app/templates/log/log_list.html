@@ -1,0 +1,14 @@
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Log</th>
+        <th>CreateTime</th>
+    </tr>
+    {% for log in log_list %}
+        <tr>
+            <td>{{ log.id }}</td>
+            <td>{{ log.log }}</td>
+            <td>{{ log.create_time }}</td>
+        </tr>
+    {% endfor %}
+</table>
